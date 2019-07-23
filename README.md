@@ -13,7 +13,7 @@ In this file put: PORT and conection string from MondoDB Cloud Cluster
 ## Routes of the API  
 |       URL       |    HTTP Verb  | Request body  |            Action           |
 | -------------   | ------------- | ------------- | --------------------------- |
-|  /api/users     |     GET       |     empty     | Returns all the users       |
-| /api/users      |     POST      |     JSON      | Adds a new user             | 
-| /api/users/:id  |     GET       |     empty     | Returns the specified user  |
-| /api/users/:id  |     PUT       |     JSON      | Edits the specified user    |
+|  /api/questions     |     POST       |     empty     | Create new question       |
+| /api/questions/:number      |     GET      |     JSON      | Get a question             | 
+| /api/answers/  |     GET       |     empty     | Get all answers  |
+| /api/answers/:id  |     POST       |     JSON      | Add a answer to the DB    |
