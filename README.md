@@ -17,3 +17,4 @@ In this file put: PORT and conection string from MondoDB Cloud Cluster
 | /api/questions/:number      |     GET      |     JSON      | Get a question             | 
 | /api/answers/  |     GET       |     JSON     | Get all answers  |
 | /api/answers  |     POST       |     empty      | Add a answer to the DB    |
+
