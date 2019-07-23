@@ -20,6 +20,6 @@ In this file put: PORT and conection string from MondoDB Cloud Cluster
 | /api/answers/cry  |     GET       |     empty      | Get cry answers    |
 | /api/answers/happy  |     GET       |     empty      | Get happy answers    |
 | /api/answers/love  |     GET       |     empty      | Get love answers    |
-| /api/answers/nothing  |     GET       |     empty      | Get bad/silence answers    |
+| /api/answers/nothing  |     GET       |     empty      | Get neutral answers    |
 
 
