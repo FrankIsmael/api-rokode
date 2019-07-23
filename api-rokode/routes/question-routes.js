@@ -21,7 +21,7 @@ router.post('/questions', (req, res, next)=>{
     })
 });
 
-// GET route => to get all the Questions
+// GET route => to get a Question
 router.get('/questions/:number', (req, res, next) => {
   Question.findOne( { number: { $eq: req.params.number } } ).populate('answers')
     .then(allTheQuestions => {
