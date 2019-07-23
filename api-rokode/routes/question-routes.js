@@ -21,6 +21,16 @@ router.post('/questions', (req, res, next)=>{
     })
 });
 
+router.get('/questions', (req, res, next) => {
+  Question.find().populate('answers')
+    .then(allTheQuestions => {
+      res.json(allTheQuestions);
+    })
+    .catch(err => {
+      res.json(err);
+    })
+});
+
 // GET route => to get a Question
 router.get('/questions/:number', (req, res, next) => {
   Question.findOne( { number: { $eq: req.params.number } } ).populate('answers')

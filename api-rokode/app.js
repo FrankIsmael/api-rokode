@@ -8,7 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const cors = require('cors');
 
 mongoose
   .connect(process.env.DB, {useNewUrlParser: true})
@@ -49,6 +49,11 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
+
+app.use(cors({
+  credentials: true,
+  origin: ['http://localhost:5000'] // to use from a different application 
+}));
 
 
 const index = require('./routes/index');
